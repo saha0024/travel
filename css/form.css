@@ -110,10 +110,23 @@ input[type=reset],input[type=submit]{
 				Image Styles
 *******************************************/
 
-@media screen and (min-width: 800px)  {
+@media screen and (max-width: 500px)  {
+  label {
+   display:block;
+	width: 15rem;
+	text-align:left;
+	margin: 0 0 0 3rem;
+	font-size: 1.2rem;
+	padding: 0.6rem 0 0.3rem 0;
+	}
+    }
+
+
+
+@media screen and (min-width: 500px) and (max-width: 780px ) {
   label {
   width: 15rem;
-	text-align:right;
+	text-align:left;
 	float:left;
 	margin: 0 3rem 0 0 ;
 	font-size: 1.2rem;
@@ -123,7 +136,27 @@ input[type=reset],input[type=submit]{
 
     
     
-    
+    @media screen and (min-width: 780px) {
+   .formBox,input[type=text],input[type=date] {
+  display:block;
+	width: 40%;
+	text-align:left;
+	float: left;
+	  
+	}
+        
+         input[type=number]{
+   display:block;
+	width: 16%;
+            
+	text-align:left;
+	float: left;
+  
+  }
+        
+  
+    }
+
     
 
 
