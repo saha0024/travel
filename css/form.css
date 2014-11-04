@@ -223,8 +223,23 @@ input[type=reset],input[type=submit]{
 */
   
   }
-       
+    #btnReset{
+    width: 10%;
+    text-align: center; 
+    clear: both;
+    float:left;
+    overflow: hidden;
+    }
   
+    #btnSubmit{
+    width: 10%;
+    text-align: center; 
+    float:left;
+    
+    overflow: hidden;
+    }
+    
+    
     }
 
     
