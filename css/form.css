@@ -7,7 +7,7 @@ to get your font sizes
 *******************************************/
 *{
 	padding:5px;
-	margin: 5px;;
+	
 }
 html,body{
 background: #04B431;
@@ -48,11 +48,13 @@ input, select, textarea{
 	
 }
 .foot{
+    clear:both;
 	background: blue;
 	color:red;
 	padding-top: 20px;
 	border-top: 6px solid #c03;
     width: 100%;
+    overflow: hidden;
     
 }
 
@@ -60,10 +62,27 @@ input, select, textarea{
 /*******************************************
 				Form Styles
 *******************************************/
-.formBox{
-margin: 1.0rem 0;		
-}
-.buttons{
+
+
+
+
+
+
+/*******************************************
+				Image Styles
+*******************************************/
+
+@media screen and (max-width: 500px)  {
+  label {
+   display:block;
+	width: 15rem;
+	text-align:left;
+	
+	font-size: 1.2rem;
+	
+	}
+    
+    .buttons{
     display:block;
 	width: 15rem;
 	text-align:left;
@@ -104,22 +123,8 @@ input[type=reset],input[type=submit]{
 	
 }
 
-
-
-/*******************************************
-				Image Styles
-*******************************************/
-
-@media screen and (max-width: 500px)  {
-  label {
-   display:block;
-	width: 15rem;
-	text-align:left;
-	margin: 0 0 0 3rem;
-	font-size: 1.2rem;
-	padding: 0.6rem 0 0.3rem 0;
-	}
-    }
+    
+}
 
 
 
@@ -128,32 +133,97 @@ input[type=reset],input[type=submit]{
   width: 15rem;
 	text-align:left;
 	float:left;
-	margin: 0 3rem 0 0 ;
-	font-size: 1.2rem;
-	padding:0.6rem 0;
+	
+	
 	}
-    }
+    .buttons{
+    
+	width: 15rem;
+	text-align:left;
+	
+	font-size: 1.2rem;
+	
+    
+	
+}
+label{
+	display:block;
+	
+	text-align:left;
+	
+	font-size: 1.2rem;
+	
+	
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+   
+	width: 15rem;
+	text-align:left;
+	
+	font-size: 1.2rem;
+	
+	
+}
+
+input[type=reset],input[type=submit]{
+    display:block;
+	width: 5rem;
+	text-align:center;
+	
+	font-size: 2rem;
+	padding: 10px;
+	
+}
+
+    
+}
 
     
     
-    @media screen and (min-width: 780px) {
+@media screen and (min-width: 781px) {
+        
+.col
+    {
+        clear: both;
+ 
+    }
+    
+.formBox:nth-child(odd){
+    clear: both;
+    float:left;
+    width: 400px;
+    overflow: hidden;
+}
+.formBox:nth-child(even){
+
+    float:left;
+    width:400px;
+    overflow: hidden;
+}
+        
    .formBox,input[type=text],input[type=date] {
-  display:block;
+/*
+    display:block;
 	width: 40%;
 	text-align:left;
 	float: left;
-	  
+*/
+
 	}
         
          input[type=number]{
+/*
    display:block;
 	width: 16%;
             
 	text-align:left;
 	float: left;
+*/
   
   }
-        
+       
   
     }
 
